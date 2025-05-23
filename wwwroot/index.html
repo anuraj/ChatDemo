@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Demo</title>
+    <!-- Bootstrap CSS (local) -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="chat.css" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-container d-flex flex-column">
+        <div class="chat-messages" id="chatMessages">
+            <!-- Messages will appear here -->
+        </div>
+        <form class="chat-input d-flex align-items-end gap-2" id="chatForm" autocomplete="off">
+            <textarea class="form-control chat-textarea flex-grow-1" id="chatInput" placeholder="Type your message..." required rows="3"></textarea>
+            <button type="submit" class="btn btn-primary send-btn px-4" title="Send">Send</button>
+        </form>
+    </div>
+
+    <script src="marked.min.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
